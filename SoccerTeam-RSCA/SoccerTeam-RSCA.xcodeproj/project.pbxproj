@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C54F44E2B4D48B3002F8553 /* SoccerTeam_RSCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F44D2B4D48B3002F8553 /* SoccerTeam_RSCAApp.swift */; };
+		0C54F4502B4D48B3002F8553 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F44F2B4D48B3002F8553 /* ContentView.swift */; };
+		0C54F4522B4D48B4002F8553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C54F4512B4D48B4002F8553 /* Assets.xcassets */; };
+		0C54F4562B4D48B4002F8553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C54F4552B4D48B4002F8553 /* Preview Assets.xcassets */; };
+		0C54F4602B4D5323002F8553 /* PlayerServiceDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F45F2B4D5323002F8553 /* PlayerServiceDefinition.swift */; };
+		0C54F4632B4D5364002F8553 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F4622B4D5364002F8553 /* CombineMoya */; };
+		0C54F4652B4D5364002F8553 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F4642B4D5364002F8553 /* Moya */; };
+		0C54F4672B4D5364002F8553 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F4662B4D5364002F8553 /* ReactiveMoya */; };
+		0C54F4692B4D5364002F8553 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F4682B4D5364002F8553 /* RxMoya */; };
+		0C54F46B2B4D5416002F8553 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F46A2B4D5416002F8553 /* PlayerService.swift */; };
+		0C54F46E2B4D5780002F8553 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F46D2B4D5780002F8553 /* PlayerData.swift */; };
+		0C54F4702B4D5FB5002F8553 /* Moya+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F46F2B4D5FB5002F8553 /* Moya+Async.swift */; };
+		0C54F4742B4D6951002F8553 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F4732B4D6951002F8553 /* PlayerListView.swift */; };
+		0C54F4762B4D93B6002F8553 /* PlayerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F4752B4D93B6002F8553 /* PlayerEnvironment.swift */; };
+		0C54F4782B4D9F3B002F8553 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F4772B4D9F3B002F8553 /* Player.swift */; };
+		0C54F47A2B4DA616002F8553 /* PlayerEnvironment+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F4792B4DA616002F8553 /* PlayerEnvironment+Live.swift */; };
+		0C54F47D2B4DFBF8002F8553 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F47C2B4DFBF8002F8553 /* Nuke */; };
+		0C54F47F2B4DFBF8002F8553 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F47E2B4DFBF8002F8553 /* NukeExtensions */; };
+		0C54F4812B4DFBF8002F8553 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F4802B4DFBF8002F8553 /* NukeUI */; };
+		0C54F4832B4DFBF8002F8553 /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 0C54F4822B4DFBF8002F8553 /* NukeVideo */; };
+		0C54F4852B4E9F06002F8553 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F4842B4E9F06002F8553 /* PlayerCell.swift */; };
+		0C54F4872B4E9F67002F8553 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C54F4862B4E9F67002F8553 /* Badge.swift */; };
+		0C56988E2B4F644B005B9AF7 /* PlayerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56988D2B4F644B005B9AF7 /* PlayerDetailsView.swift */; };
+		0C5698922B50419C005B9AF7 /* Ribbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5698912B50419C005B9AF7 /* Ribbon.swift */; };
+		0C5698952B504423005B9AF7 /* View+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5698942B504423005B9AF7 /* View+Geometry.swift */; };
+		0C5698972B505190005B9AF7 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5698962B505190005B9AF7 /* Flag.swift */; };
+		0C56989F2B505512005B9AF7 /* SoccerTeam_RSCA_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56989E2B505512005B9AF7 /* SoccerTeam_RSCA_Tests.swift */; };
+		0C5698A62B50552A005B9AF7 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5698A52B50552A005B9AF7 /* FlagTests.swift */; };
+		0C5698A82B508A0F005B9AF7 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5698A72B508A0F005B9AF7 /* Star.swift */; };
+		0C5698AA2B50A896005B9AF7 /* View+Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5698A92B50A896005B9AF7 /* View+Haptics.swift */; };
+		0C5698AD2B50AC07005B9AF7 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5698AC2B50AC07005B9AF7 /* OrderedCollections */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C5698A02B505512005B9AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C54F4422B4D48B3002F8553 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C54F4492B4D48B3002F8553;
+			remoteInfo = "SoccerTeam-RSCA";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C54F44A2B4D48B3002F8553 /* SoccerTeam-RSCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoccerTeam-RSCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C54F44D2B4D48B3002F8553 /* SoccerTeam_RSCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTeam_RSCAApp.swift; sourceTree = "<group>"; };
+		0C54F44F2B4D48B3002F8553 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0C54F4512B4D48B4002F8553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C54F4532B4D48B4002F8553 /* SoccerTeam_RSCA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoccerTeam_RSCA.entitlements; sourceTree = "<group>"; };
+		0C54F4552B4D48B4002F8553 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C54F45F2B4D5323002F8553 /* PlayerServiceDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerServiceDefinition.swift; sourceTree = "<group>"; };
+		0C54F46A2B4D5416002F8553 /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		0C54F46D2B4D5780002F8553 /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
+		0C54F46F2B4D5FB5002F8553 /* Moya+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Async.swift"; sourceTree = "<group>"; };
+		0C54F4732B4D6951002F8553 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		0C54F4752B4D93B6002F8553 /* PlayerEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEnvironment.swift; sourceTree = "<group>"; };
+		0C54F4772B4D9F3B002F8553 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0C54F4792B4DA616002F8553 /* PlayerEnvironment+Live.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerEnvironment+Live.swift"; sourceTree = "<group>"; };
+		0C54F4842B4E9F06002F8553 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		0C54F4862B4E9F67002F8553 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		0C56988D2B4F644B005B9AF7 /* PlayerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsView.swift; sourceTree = "<group>"; };
+		0C5698912B50419C005B9AF7 /* Ribbon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ribbon.swift; sourceTree = "<group>"; };
+		0C5698942B504423005B9AF7 /* View+Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Geometry.swift"; sourceTree = "<group>"; };
+		0C5698962B505190005B9AF7 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		0C56989C2B505512005B9AF7 /* SoccerTeam-RSCA-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoccerTeam-RSCA-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C56989E2B505512005B9AF7 /* SoccerTeam_RSCA_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTeam_RSCA_Tests.swift; sourceTree = "<group>"; };
+		0C5698A52B50552A005B9AF7 /* FlagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagTests.swift; sourceTree = "<group>"; };
+		0C5698A72B508A0F005B9AF7 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		0C5698A92B50A896005B9AF7 /* View+Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Haptics.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C54F4472B4D48B3002F8553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C54F4652B4D5364002F8553 /* Moya in Frameworks */,
+				0C54F4812B4DFBF8002F8553 /* NukeUI in Frameworks */,
+				0C54F4632B4D5364002F8553 /* CombineMoya in Frameworks */,
+				0C54F4832B4DFBF8002F8553 /* NukeVideo in Frameworks */,
+				0C54F4692B4D5364002F8553 /* RxMoya in Frameworks */,
+				0C5698AD2B50AC07005B9AF7 /* OrderedCollections in Frameworks */,
+				0C54F4672B4D5364002F8553 /* ReactiveMoya in Frameworks */,
+				0C54F47D2B4DFBF8002F8553 /* Nuke in Frameworks */,
+				0C54F47F2B4DFBF8002F8553 /* NukeExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5698992B505512005B9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C54F4412B4D48B3002F8553 = {
+			isa = PBXGroup;
+			children = (
+				0C54F44C2B4D48B3002F8553 /* SoccerTeam-RSCA */,
+				0C56989D2B505512005B9AF7 /* SoccerTeam-RSCA-Tests */,
+				0C54F44B2B4D48B3002F8553 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C54F44B2B4D48B3002F8553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F44A2B4D48B3002F8553 /* SoccerTeam-RSCA.app */,
+				0C56989C2B505512005B9AF7 /* SoccerTeam-RSCA-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C54F44C2B4D48B3002F8553 /* SoccerTeam-RSCA */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F44D2B4D48B3002F8553 /* SoccerTeam_RSCAApp.swift */,
+				0C54F44F2B4D48B3002F8553 /* ContentView.swift */,
+				0C54F4512B4D48B4002F8553 /* Assets.xcassets */,
+				0C54F4532B4D48B4002F8553 /* SoccerTeam_RSCA.entitlements */,
+				0C54F4542B4D48B4002F8553 /* Preview Content */,
+				0C5698932B50440F005B9AF7 /* Helpers */,
+				0C54F45E2B4D52B0002F8553 /* Service */,
+				0C54F4712B4D68D0002F8553 /* Features */,
+			);
+			path = "SoccerTeam-RSCA";
+			sourceTree = "<group>";
+		};
+		0C54F4542B4D48B4002F8553 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F4552B4D48B4002F8553 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C54F45E2B4D52B0002F8553 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F46F2B4D5FB5002F8553 /* Moya+Async.swift */,
+				0C54F46C2B4D5769002F8553 /* Decodables */,
+				0C54F45F2B4D5323002F8553 /* PlayerServiceDefinition.swift */,
+				0C54F46A2B4D5416002F8553 /* PlayerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0C54F46C2B4D5769002F8553 /* Decodables */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F46D2B4D5780002F8553 /* PlayerData.swift */,
+			);
+			path = Decodables;
+			sourceTree = "<group>";
+		};
+		0C54F4712B4D68D0002F8553 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F4722B4D692D002F8553 /* PlayerList */,
+				0C56988C2B4F641C005B9AF7 /* PlayerDetails */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0C54F4722B4D692D002F8553 /* PlayerList */ = {
+			isa = PBXGroup;
+			children = (
+				0C54F4732B4D6951002F8553 /* PlayerListView.swift */,
+				0C54F4752B4D93B6002F8553 /* PlayerEnvironment.swift */,
+				0C54F4792B4DA616002F8553 /* PlayerEnvironment+Live.swift */,
+				0C54F4772B4D9F3B002F8553 /* Player.swift */,
+				0C54F4842B4E9F06002F8553 /* PlayerCell.swift */,
+				0C54F4862B4E9F67002F8553 /* Badge.swift */,
+			);
+			path = PlayerList;
+			sourceTree = "<group>";
+		};
+		0C56988C2B4F641C005B9AF7 /* PlayerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0C5698A72B508A0F005B9AF7 /* Star.swift */,
+				0C5698912B50419C005B9AF7 /* Ribbon.swift */,
+				0C56988D2B4F644B005B9AF7 /* PlayerDetailsView.swift */,
+			);
+			path = PlayerDetails;
+			sourceTree = "<group>";
+		};
+		0C5698932B50440F005B9AF7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0C5698942B504423005B9AF7 /* View+Geometry.swift */,
+				0C5698962B505190005B9AF7 /* Flag.swift */,
+				0C5698A92B50A896005B9AF7 /* View+Haptics.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0C56989D2B505512005B9AF7 /* SoccerTeam-RSCA-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0C56989E2B505512005B9AF7 /* SoccerTeam_RSCA_Tests.swift */,
+				0C5698A52B50552A005B9AF7 /* FlagTests.swift */,
+			);
+			path = "SoccerTeam-RSCA-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C54F4492B4D48B3002F8553 /* SoccerTeam-RSCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C54F4592B4D48B4002F8553 /* Build configuration list for PBXNativeTarget "SoccerTeam-RSCA" */;
+			buildPhases = (
+				0C54F4462B4D48B3002F8553 /* Sources */,
+				0C54F4472B4D48B3002F8553 /* Frameworks */,
+				0C54F4482B4D48B3002F8553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoccerTeam-RSCA";
+			packageProductDependencies = (
+				0C54F4622B4D5364002F8553 /* CombineMoya */,
+				0C54F4642B4D5364002F8553 /* Moya */,
+				0C54F4662B4D5364002F8553 /* ReactiveMoya */,
+				0C54F4682B4D5364002F8553 /* RxMoya */,
+				0C54F47C2B4DFBF8002F8553 /* Nuke */,
+				0C54F47E2B4DFBF8002F8553 /* NukeExtensions */,
+				0C54F4802B4DFBF8002F8553 /* NukeUI */,
+				0C54F4822B4DFBF8002F8553 /* NukeVideo */,
+				0C5698AC2B50AC07005B9AF7 /* OrderedCollections */,
+			);
+			productName = "SoccerTeam-RSCA";
+			productReference = 0C54F44A2B4D48B3002F8553 /* SoccerTeam-RSCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C56989B2B505512005B9AF7 /* SoccerTeam-RSCA-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5698A22B505512005B9AF7 /* Build configuration list for PBXNativeTarget "SoccerTeam-RSCA-Tests" */;
+			buildPhases = (
+				0C5698982B505512005B9AF7 /* Sources */,
+				0C5698992B505512005B9AF7 /* Frameworks */,
+				0C56989A2B505512005B9AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C5698A12B505512005B9AF7 /* PBXTargetDependency */,
+			);
+			name = "SoccerTeam-RSCA-Tests";
+			productName = "SoccerTeam-RSCA-Tests";
+			productReference = 0C56989C2B505512005B9AF7 /* SoccerTeam-RSCA-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C54F4422B4D48B3002F8553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0C54F4492B4D48B3002F8553 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					0C56989B2B505512005B9AF7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 0C54F4492B4D48B3002F8553;
+					};
+				};
+			};
+			buildConfigurationList = 0C54F4452B4D48B3002F8553 /* Build configuration list for PBXProject "SoccerTeam-RSCA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C54F4412B4D48B3002F8553;
+			packageReferences = (
+				0C54F4612B4D5364002F8553 /* XCRemoteSwiftPackageReference "Moya" */,
+				0C54F47B2B4DFBF8002F8553 /* XCRemoteSwiftPackageReference "Nuke" */,
+				0C5698AB2B50AC07005B9AF7 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 0C54F44B2B4D48B3002F8553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C54F4492B4D48B3002F8553 /* SoccerTeam-RSCA */,
+				0C56989B2B505512005B9AF7 /* SoccerTeam-RSCA-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C54F4482B4D48B3002F8553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C54F4562B4D48B4002F8553 /* Preview Assets.xcassets in Resources */,
+				0C54F4522B4D48B4002F8553 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C56989A2B505512005B9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C54F4462B4D48B3002F8553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C54F46B2B4D5416002F8553 /* PlayerService.swift in Sources */,
+				0C5698922B50419C005B9AF7 /* Ribbon.swift in Sources */,
+				0C56988E2B4F644B005B9AF7 /* PlayerDetailsView.swift in Sources */,
+				0C54F4872B4E9F67002F8553 /* Badge.swift in Sources */,
+				0C5698952B504423005B9AF7 /* View+Geometry.swift in Sources */,
+				0C5698AA2B50A896005B9AF7 /* View+Haptics.swift in Sources */,
+				0C5698A82B508A0F005B9AF7 /* Star.swift in Sources */,
+				0C54F46E2B4D5780002F8553 /* PlayerData.swift in Sources */,
+				0C54F4602B4D5323002F8553 /* PlayerServiceDefinition.swift in Sources */,
+				0C54F4742B4D6951002F8553 /* PlayerListView.swift in Sources */,
+				0C54F4762B4D93B6002F8553 /* PlayerEnvironment.swift in Sources */,
+				0C54F4852B4E9F06002F8553 /* PlayerCell.swift in Sources */,
+				0C54F4502B4D48B3002F8553 /* ContentView.swift in Sources */,
+				0C54F4702B4D5FB5002F8553 /* Moya+Async.swift in Sources */,
+				0C54F4782B4D9F3B002F8553 /* Player.swift in Sources */,
+				0C54F47A2B4DA616002F8553 /* PlayerEnvironment+Live.swift in Sources */,
+				0C54F44E2B4D48B3002F8553 /* SoccerTeam_RSCAApp.swift in Sources */,
+				0C5698972B505190005B9AF7 /* Flag.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5698982B505512005B9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C56989F2B505512005B9AF7 /* SoccerTeam_RSCA_Tests.swift in Sources */,
+				0C5698A62B50552A005B9AF7 /* FlagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C5698A12B505512005B9AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C54F4492B4D48B3002F8553 /* SoccerTeam-RSCA */;
+			targetProxy = 0C5698A02B505512005B9AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C54F4572B4D48B4002F8553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C54F4582B4D48B4002F8553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0C54F45A2B4D48B4002F8553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SoccerTeam-RSCA/SoccerTeam_RSCA.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SoccerTeam-RSCA/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KH6J2MY48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.firstsecond.SoccerTeam-RSCA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C54F45B2B4D48B4002F8553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SoccerTeam-RSCA/SoccerTeam_RSCA.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SoccerTeam-RSCA/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KH6J2MY48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.firstsecond.SoccerTeam-RSCA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C5698A32B505512005B9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MQQKQWNJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.firstsecond.SoccerTeam-RSCA-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerTeam-RSCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerTeam-RSCA";
+			};
+			name = Debug;
+		};
+		0C5698A42B505512005B9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MQQKQWNJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.firstsecond.SoccerTeam-RSCA-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerTeam-RSCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerTeam-RSCA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C54F4452B4D48B3002F8553 /* Build configuration list for PBXProject "SoccerTeam-RSCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C54F4572B4D48B4002F8553 /* Debug */,
+				0C54F4582B4D48B4002F8553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C54F4592B4D48B4002F8553 /* Build configuration list for PBXNativeTarget "SoccerTeam-RSCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C54F45A2B4D48B4002F8553 /* Debug */,
+				0C54F45B2B4D48B4002F8553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C5698A22B505512005B9AF7 /* Build configuration list for PBXNativeTarget "SoccerTeam-RSCA-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5698A32B505512005B9AF7 /* Debug */,
+				0C5698A42B505512005B9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C54F4612B4D5364002F8553 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		0C54F47B2B4DFBF8002F8553 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
+			};
+		};
+		0C5698AB2B50AC07005B9AF7 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C54F4622B4D5364002F8553 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F4612B4D5364002F8553 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		0C54F4642B4D5364002F8553 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F4612B4D5364002F8553 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0C54F4662B4D5364002F8553 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F4612B4D5364002F8553 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		0C54F4682B4D5364002F8553 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F4612B4D5364002F8553 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		0C54F47C2B4DFBF8002F8553 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F47B2B4DFBF8002F8553 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		0C54F47E2B4DFBF8002F8553 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F47B2B4DFBF8002F8553 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		0C54F4802B4DFBF8002F8553 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F47B2B4DFBF8002F8553 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		0C54F4822B4DFBF8002F8553 /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C54F47B2B4DFBF8002F8553 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeVideo;
+		};
+		0C5698AC2B50AC07005B9AF7 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5698AB2B50AC07005B9AF7 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0C54F4422B4D48B3002F8553 /* Project object */;
+}
